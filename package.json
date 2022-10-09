@@ -1,14 +1,14 @@
 {
   "name": "roman-chariots",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "rm -rf dist && npm run build && echo 'eric-romans.euans.space' > dist/CNAME && gh-pages -d dist"
   },
   "author": "Eric Goddard",
-  "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel": "^2.7.0"
   }
 }
