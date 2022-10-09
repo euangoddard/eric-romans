@@ -1,0 +1,38 @@
+body {
+  font-family: "Luxurious Roman", cursive;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+h1 small {
+  font-size: 24px;
+}
+
+h2 {
+  margin: 0 0 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.two-up {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 769px) {
+  .two-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.clamp-image {
+  max-width: 100%;
+}
